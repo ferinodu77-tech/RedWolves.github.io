@@ -1,21 +1,39 @@
-# Security Policy
+# Politique de Sécurité
 
-## Supported Versions
+## Versions prises en charge
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Le tableau ci-dessous indique les versions du projet actuellement couvertes par les mises à jour de sécurité.
 
-| Version | Supported          |
+| Version | Prise en charge     |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 1.0.x   | :white_check_mark: |
+| < 1.0   | :x:                |
 
-## Reporting a Vulnerability
+---
 
-Use this section to tell people how to report a vulnerability.
+## Signaler une vulnérabilité
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Nous prenons la sécurité de ce projet très au sérieux. Si vous découvrez une faille ou une vulnérabilité, merci de nous la signaler de manière responsable.
+
+### Comment nous contacter ?
+
+* **E-mail :** Envoyez un e-mail à `contact@votre-domaine.com` *(remplacez par votre vrai e-mail)*.
+* **Message privé :** Contactez directement les administrateurs via Discord / notre plateforme.
+
+Merci de **ne pas créer de Ticket / Issue public** pour signaler une faille de sécurité.
+
+---
+
+### Ce que vous devez inclure dans votre rapport :
+
+1. Une description détaillée du problème.
+2. Les étapes permettant de reproduire la vulnérabilité (ex. démonstration de concept / PoC).
+3. L'impact potentiel sur le site ou les utilisateurs.
+
+---
+
+### Délais et processus de traitement :
+
+* **Accusé de réception :** Nous répondons aux signalements sous **24 à 48 heures**.
+* **Évaluation :** Nous vous informerons si la vulnérabilité est confirmée, rejetée ou nécessite des précisions.
+* **Résolution :** Si la faille est validée, un correctif sera publié dans les plus brefs délais.
