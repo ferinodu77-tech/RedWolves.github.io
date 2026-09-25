@@ -1,4 +1,4 @@
- # Politique de Sécurité
+# Politique de Sécurité
 
 ## Versions prises en charge
 
@@ -36,6 +36,6 @@ Merci de **ne pas créer de Ticket / Issue public** pour signaler une faille de 
 
 * **Accusé de réception :** Nous répondons aux signalements sous **24 à 48 heures**.
 * **Évaluation :** Nous vous informerons si la vulnérabilité est confirmée, rejetée ou nécessite des précisions.
-* **Résolution :** Si la faille est validée, un correctif sera publié dans les plus brefs délais.   
+* **Résolution :** Si la faille est validée, un correctif sera publié dans les plus brefs délais.  
 
 
