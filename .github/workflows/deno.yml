@@ -1,44 +1,12 @@
-name: Deno
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1"
+  },
+  "fmt": {
+    "lineWidth": 100
+  }
+}
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  deno:
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        deno-version:
-          - v1.x
-          - v2.x
-    permissions:
-      contents: read
-    steps:
-      - name: Setup repo
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-
-      - name: Setup Deno ${{ matrix.deno-version }}
-        uses: denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed # v2.0.4
-        with:
-          deno-version: ${{ matrix.deno-version }}
-
-      - name: Run tests
-        run: deno task test
-
-      - name: Generate CodeCov-friendly coverage report
-        run: deno task coverage
-
-      - name: Upload coverage to CodeCov
-        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
-        if: matrix.deno-version == 'v2.x'
-        with:
-          files: ./lcov.info
-          token: ${{ secrets.CODECOV_TOKEN }}
